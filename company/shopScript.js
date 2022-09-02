@@ -23,7 +23,7 @@ prevBtn.addEventListener('click', () => {
     counter--;
     carousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
-
+//add a eventlisterner to carousel
 carousel.addEventListener('transitionend', () => {
     if(carouselImages[counter].id === 'lastClone'){
         carousel.style.transition = 'none';
